@@ -1,6 +1,6 @@
-# Source register and accounting conventions
+# Financial sources and accounting choices
 
-I use the **consolidated Group** columns; I do not mix them with the separate Dangote Cement Plc (parent Company) columns.
+I work from the **consolidated Group** results throughout the historical model. The annual filings also contain separate figures for the Nigerian parent company; mixing the two would make the analysis unreliable. I note the source document and page for every major statement.
 
 | ID | Filing | Group data | Page(s) |
 |---|---|---|---|
