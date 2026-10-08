@@ -91,7 +91,7 @@ I added a [dated input audit](docs/valuation_input_audit.md) and a [Nigerian cem
 2. **Financial performance analysis — IN PROGRESS**. Examine margins, working capital, net debt, cash generation and one-off items.
 3. **Forecast assumptions & three-statement model — WORKING PROTOTYPE**. Scenario-based income, cash flow and balance sheet model passes cross-statement checks. Sources and debt/capex schedules need deepening.
 4. **Equity valuation — DCF + PEER EV/EBITDA PROTOTYPES**. Assumption-led FCFF DCF, October reference WACC, dated H1 balance-sheet equity bridge and sensitivity. Requires research-grade calibration and segment forecasts.
-5. **Investment note and Power BI dashboard — PLANNED**, after source/assumption validation. Communicate investment thesis, risks, limitations and scenarios.
+5. **Power BI dashboard import kit and interactive preview — CREATED**. Building and verifying the native Desktop report remains outstanding; final equity research note is planned. Communicate investment thesis, risks, limitations and scenarios.
 
 ## Sources & research discipline
 
@@ -100,5 +100,11 @@ My principal source is the **[FY2025 audited consolidated filing (NGX Document L
 My **valuation uses mixed-date inputs** (the most recent available H1 2026 cash/debt and Oct 2026 market quotes), so its results are not contemporaneous point-in-time fair values. My share values are purely illustrative. I keep reported numbers separate from analytical definitions. For example, the simple `operating cash flow - cash PPE - cash intangibles` calculation is a **cash-flow proxy**, not unlevered free cash flow available to the firm. I won't present it as a completed DCF.
 
 ---
+
+## Phase 5 — Power BI investment dashboard
+
+I added a [Power BI import kit](dashboard/README.md) with **8 CSV model tables**, [DAX measures](dashboard/powerbi/measures.dax), [dark report theme](dashboard/powerbi/theme.json), and a [four-page interactive browser preview](dashboard/preview/index.html). The [dataset generator](dashboard/scripts/build_data.py) and [cross-source validator](dashboard/scripts/test_data.py) are reproducible with the Python standard library.
+
+**Important:** these assets are ready to *import into Power BI Desktop*, but they are **not** a verified native `.pbix`/PBIR report. The browser preview is separate from Power BI. Nothing is merged to main.
 
 **Author:** [Ayoleyi-dev](https://github.com/Ayoleyi-dev) · Research / educational portfolio only.
