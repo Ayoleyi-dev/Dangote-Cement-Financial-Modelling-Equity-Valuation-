@@ -101,6 +101,12 @@ My **valuation uses mixed-date inputs** (the most recent available H1 2026 cash/
 
 ---
 
+## Phase 6 — Equity research report (draft for review)
+
+I prepared a [sourced equity research case study](reports/DANGCEM_Equity_Research_Case_Study_2026-10-08.md) that brings together audited Group financials, H1 2026 context, historical profitability and cash conversion, FY2026–2030 forecasts, the provisional DCF, P/E and EV/EBITDA comparisons, WACC/capex sensitivity and the main research risks.
+
+**Publication status:** Technical draft only. I make **no BUY/HOLD/SELL recommendation**: the DCF uses uncalibrated WACC/reinvestment drivers and the peer comparisons mix October prices with FY2025 financials. The formatted PDF and Word companion versions are available in the project conversation; the GitHub Markdown report is the version-controlled source for review. I will only merge to main after our final QA and your approval.
+
 ## Phase 5 — Power BI investment dashboard
 
 I added a [Power BI import kit](dashboard/README.md) with **8 CSV model tables**, [DAX measures](dashboard/powerbi/measures.dax), [dark report theme](dashboard/powerbi/theme.json), and a [four-page interactive browser preview](dashboard/preview/index.html). The [dataset generator](dashboard/scripts/build_data.py) and [cross-source validator](dashboard/scripts/test_data.py) are reproducible with the Python standard library.
