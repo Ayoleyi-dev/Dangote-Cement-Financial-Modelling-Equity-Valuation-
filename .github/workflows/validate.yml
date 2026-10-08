@@ -16,3 +16,4 @@ jobs:
       - run: python scripts/validate.py
       - run: python scripts/analyze.py --check
       - run: python scripts/forecast.py --check
+      - run: python scripts/valuation.py --check
