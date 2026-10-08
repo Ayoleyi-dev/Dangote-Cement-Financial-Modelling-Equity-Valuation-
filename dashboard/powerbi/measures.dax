@@ -1,0 +1,157 @@
+-- Dangote Cement investment dashboard: Power BI Desktop measures.
+-- Create measures one at a time with Modeling > New measure.
+-- DimScenario is intentionally DISCONNECTED: it selects future cases without
+-- filtering away the reported Actual rows. DimYear relates to FactFinancial
+-- and FactFCFF; DimMetric relates only to FactFinancial.
+-- NGNm means ₦ million. Multiply by 1,000,000 to express NGN (not needed on charts).
+
+Selected Scenario =
+SELECTEDVALUE ( DimScenario[Scenario], "Base" )
+
+Revenue (NGNm) =
+SUMX (
+    VALUES ( DimYear[Year] ),
+    VAR ReportingYear = DimYear[Year]
+    VAR CaseToUse = IF ( ReportingYear <= 2025, "Actual", [Selected Scenario] )
+    RETURN
+        CALCULATE (
+            SUM ( FactFinancial[ValueNGNm] ),
+            FactFinancial[MetricKey] = "Revenue",
+            FactFinancial[Scenario] = CaseToUse
+        )
+)
+
+Operating Profit (NGNm) =
+SUMX (
+    VALUES ( DimYear[Year] ),
+    VAR ReportingYear = DimYear[Year]
+    VAR CaseToUse = IF ( ReportingYear <= 2025, "Actual", [Selected Scenario] )
+    RETURN
+        CALCULATE (
+            SUM ( FactFinancial[ValueNGNm] ),
+            FactFinancial[MetricKey] = "EBIT",
+            FactFinancial[Scenario] = CaseToUse
+        )
+)
+
+Net Profit (NGNm) =
+SUMX (
+    VALUES ( DimYear[Year] ),
+    VAR ReportingYear = DimYear[Year]
+    VAR CaseToUse = IF ( ReportingYear <= 2025, "Actual", [Selected Scenario] )
+    RETURN
+        CALCULATE (
+            SUM ( FactFinancial[ValueNGNm] ),
+            FactFinancial[MetricKey] = "PAT",
+            FactFinancial[Scenario] = CaseToUse
+        )
+)
+
+Operating Cash Flow (NGNm) =
+SUMX (
+    VALUES ( DimYear[Year] ),
+    VAR ReportingYear = DimYear[Year]
+    VAR CaseToUse = IF ( ReportingYear <= 2025, "Actual", [Selected Scenario] )
+    RETURN
+        CALCULATE (
+            SUM ( FactFinancial[ValueNGNm] ),
+            FactFinancial[MetricKey] = "CFO",
+            FactFinancial[Scenario] = CaseToUse
+        )
+)
+
+Cash Capex (NGNm) =
+SUMX (
+    VALUES ( DimYear[Year] ),
+    VAR ReportingYear = DimYear[Year]
+    VAR CaseToUse = IF ( ReportingYear <= 2025, "Actual", [Selected Scenario] )
+    RETURN
+        CALCULATE (
+            SUM ( FactFinancial[ValueNGNm] ),
+            FactFinancial[MetricKey] = "CashCapex",
+            FactFinancial[Scenario] = CaseToUse
+        )
+)
+
+Gross Profit (NGNm) =
+CALCULATE (
+    SUM ( FactFinancial[ValueNGNm] ),
+    FactFinancial[MetricKey] = "GrossProfit",
+    FactFinancial[Scenario] = "Actual"
+)
+
+Gross Margin % =
+DIVIDE ( [Gross Profit (NGNm)], [Revenue (NGNm)] )
+
+Operating Margin % =
+DIVIDE ( [Operating Profit (NGNm)], [Revenue (NGNm)] )
+
+Net Margin % =
+DIVIDE ( [Net Profit (NGNm)], [Revenue (NGNm)] )
+
+Revenue YoY % =
+VAR CurrentYear = SELECTEDVALUE ( DimYear[Year] )
+VAR Previous =
+    CALCULATE (
+        [Revenue (NGNm)],
+        FILTER ( ALL ( DimYear ), DimYear[Year] = CurrentYear - 1 )
+    )
+RETURN
+    IF (
+        ISBLANK ( CurrentYear ) || ISBLANK ( Previous ),
+        BLANK(),
+        DIVIDE ( [Revenue (NGNm)] - Previous, Previous )
+    )
+
+FCFF (NGNm) =
+VAR CaseName = [Selected Scenario]
+RETURN
+    CALCULATE ( SUM ( FactFCFF[FCFFNGNm] ), FactFCFF[Scenario] = CaseName )
+
+DCF per Share (NGN) =
+VAR CaseName = [Selected Scenario]
+RETURN
+    CALCULATE (
+        MAX ( FactValuation[ValuePerShareNGN] ),
+        FactValuation[Scenario] = CaseName
+    )
+
+DCF Enterprise Value (NGNm) =
+VAR CaseName = [Selected Scenario]
+RETURN
+    CALCULATE (
+        MAX ( FactValuation[EnterpriseValueNGNm] ),
+        FactValuation[Scenario] = CaseName
+    )
+
+DCF WACC % =
+VAR CaseName = [Selected Scenario]
+RETURN
+    CALCULATE ( MAX ( FactValuation[WACC] ), FactValuation[Scenario] = CaseName )
+
+Peer P/E Average (ex DANGCEM) =
+AVERAGEX (
+    FILTER ( ALL ( FactPeer ), FactPeer[Ticker] <> "DANGCEM" ),
+    FactPeer[PE]
+)
+
+Peer EV EBITDA Average (ex DANGCEM) =
+AVERAGEX (
+    FILTER ( ALL ( FactPeer ), FactPeer[Ticker] <> "DANGCEM" ),
+    FactPeer[EVtoEBITDA]
+)
+
+Peer P/E Implied Share (NGN) =
+[Peer P/E Average (ex DANGCEM)] *
+MAXX (
+    FILTER ( ALL ( FactPeer ), FactPeer[Ticker] = "DANGCEM" ),
+    FactPeer[FY2025EPSNGN]
+)
+
+DCF Sensitivity Share (NGN) =
+MAX ( FactSensitivity[ValuePerShareNGN] )
+
+-- Use DimYear on a Year axis, connected to FactFinancial and FactFCFF.
+-- Use the disconnected DimScenario slicer with single-select enabled.
+-- Format percentage measures as percent; don't multiply by 100 in DAX.
+-- Limit Gross Margin to 2023–2025: forecast gross profit was not modelled.
