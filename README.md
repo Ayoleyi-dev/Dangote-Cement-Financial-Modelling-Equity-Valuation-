@@ -76,11 +76,6 @@ The numbers are reproducible, but reproducibility does not make the assumptions 
 
 The latest progress and any issues that should block the release are recorded in [the quality-control review](docs/QUALITY_CONTROL.md).
 
-## Branch and review policy
-
-I am keeping this work on **`development`** until the source checks, calculations, report and dashboard have been reviewed. **Nothing has been merged into `main`.**
-
----
 
 **Research and analysis:** Ayoleyi Gbenga-Ayodeji  
 [GitHub profile](https://github.com/Ayoleyi-dev) · [Portfolio](https://ayoleyi-portfolio.vercel.app)
