@@ -1,4 +1,4 @@
 Ticker,Company,PriceDate,PriceNGN,FY2025EPSNGN,PE,EVtoEBITDA,EnterpriseValueNGNm,EBITDANGNm,BalanceAsOf,EBITDABasis,Status
-DANGCEM,Dangote Cement,2026-10-07,NaN,59.86,17.819913,9.415145,NaN,1981100,2025-12-31,Issuer-rounded Group EBITDA,Illustrative historical peer multiple
-BUACEMENT,BUA Cement,2026-10-07,NaN,10.51,28.258801,18.610593,NaN,553669,2025-12-31,Vendor-provided FY2025 EBITDA; audit pending,Illustrative historical peer multiple
-LAFARGE,Lafarge Africa,2026-10-07,NaN,16.96,20.931604,12.495671,NaN,426924.942,2025-12-31,IFRS reconstructed EBITDA proxy,Illustrative historical peer multiple
+DANGCEM,Dangote Cement,2026-10-07,1066.70,59.86,17.819913,9.415145,NaN,1981100,2025-12-31,Issuer-rounded Group EBITDA,Illustrative historical peer multiple
+BUACEMENT,BUA Cement,2026-10-07,297.00,10.51,28.258801,18.610593,NaN,553669,2025-12-31,Vendor-provided FY2025 EBITDA; audit pending,Illustrative historical peer multiple
+LAFARGE,Lafarge Africa,2026-10-07,355.00,16.96,20.931604,12.495671,NaN,426924.942,2025-12-31,IFRS reconstructed EBITDA proxy,Illustrative historical peer multiple
