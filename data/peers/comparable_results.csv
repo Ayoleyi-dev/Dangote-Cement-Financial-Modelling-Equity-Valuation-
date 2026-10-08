@@ -1,4 +1,4 @@
 ticker,company,price_date,price_ngn,fy2025_eps_ngn,trailing_fy2025_pe,eps_quality
 DANGCEM,Dangote Cement,2026-10-07,1066.70,59.86,17.819913,audited EPS
-BUACEMENT,BUA Cement,2026-10-07,297.00,10.00,29.700000,issuer press release rounded EPS
-LAFARGE,Lafarge Africa,2026-10-07,355.00,17.00,20.882353,issuer press release rounded EPS
+BUACEMENT,BUA Cement,2026-10-07,297.00,10.51,28.258801,audited Group EPS
+LAFARGE,Lafarge Africa,2026-10-07,355.00,16.96,20.931604,audited Group EPS
