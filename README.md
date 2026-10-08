@@ -4,7 +4,7 @@
 
 I'm building this project to demonstrate how I move from historical company accounts to an evidence-based equity valuation. My background is in data analytics, so I am deliberately treating financial reporting as a data-quality problem first: source the numbers, reproduce the statements, reconcile them, and *only then* forecast or value the business.
 
-> **Status as of 8 October 2026:** Audited FY2024–FY2025 Group history and FY2023 income statement verified. An **illustrative FY2026–FY2030 three-statement forecast** with downside/base/upside scenarios is now implemented. WACC, enterprise valuation and an equity price target are **not yet completed**. Forecast scenarios are analyst assumptions, not Dangote Cement guidance or investment advice.
+> **Status as of 8 October 2026:** Historical Group results, an illustrative FY2026–FY2030 three-statement forecasting engine, and a **Phase 3 DCF/WACC prototype** with downside/base/upside cases and WACC/terminal-growth sensitivity. My share values are learning-model outputs, **not verified fair-value targets, company guidance or investment recommendations**.
 
 ## What I've built
 
@@ -16,6 +16,7 @@ I'm building this project to demonstrate how I move from historical company acco
 - **Validation scripts:** repeatable, standard-library-only assertions for main statement totals and for projected balance sheets/cash flows.
 - **Forecasting engine:** editable scenario drivers, profit and cash flow projections, balance-sheet equation and cash bridge.
 - **Scenario outputs:** [Downside](data/forecasts/downside.csv), [Base](data/forecasts/base.csv) and [Upside](data/forecasts/upside.csv) as CSVs for GitHub review. Regenerate after editing assumptions.
+- **Valuation prototype:** FCFF, scenario enterprise value, EV-to-equity bridge, nominal WACC, terminal value, and WACC/g sensitivity. See [my valuation methodology](docs/valuation_methodology.md) for major limitations.
 
 ## A few findings from the accounts
 
@@ -40,13 +41,16 @@ data/
   forecasts/               Derived scenario projections (not reported figures)
 assumptions/
   scenarios.csv            FY2026–FY2030 editable analyst assumptions
+  valuation_inputs.csv     Dated reported and uncalibrated analyst inputs
 docs/
   sources.md               exact source links + interpretation notes
   learning_notes.md        explanation of what each reconciliation means
   forecast_methodology.md  simplified forecast mechanics, caveats, H1 2026 context
+  valuation_methodology.md DCF, dated capital structure, discount rate and caveats
 scripts/
   validate.py              reproducible historical checks
   forecast.py              downside/base/upside model and balance-sheet checks
+  valuation.py             FCFF DCF with WACC and sensitivity validation
 .github/workflows/
   validate.yml             CI runs checks when changed
 ```
@@ -58,6 +62,8 @@ python scripts/validate.py
 python scripts/analyze.py --check
 python scripts/forecast.py --check
 python scripts/forecast.py --export
+python scripts/valuation.py --check
+python scripts/valuation.py --export
 ```
 
 No credentials or paid datasets are needed. The model is constructed from the audited public disclosures. Data in the CSV files are integers in **₦ million**, except earnings per share (₦ per share).
@@ -71,14 +77,14 @@ I have started the [FY2024–FY2025 performance review](docs/financial_performan
 1. **Historical statements & checks — COMPLETE for FY2024–FY2025**. FY2023 profit or loss is present; FY2023 balance sheet and cash flow remain to be added.
 2. **Financial performance analysis — IN PROGRESS**. Examine margins, working capital, net debt, cash generation and one-off items.
 3. **Forecast assumptions & three-statement model — WORKING PROTOTYPE**. Scenario-based income, cash flow and balance sheet model passes cross-statement checks. Sources and debt/capex schedules need deepening.
-4. **Equity valuation — PLANNED**. FCFF DCF, discount rate assumptions, enterprise-to-equity bridge and sensitivity.
+4. **Equity valuation — PROTOTYPE COMPLETE**. Assumption-led FCFF DCF, October reference WACC, dated H1 balance-sheet equity bridge and sensitivity. Requires research-grade calibration and segment forecasts.
 5. **Investment note and dashboard — PLANNED**. Communicate investment thesis, risks, limitations and scenarios.
 
 ## Sources & research discipline
 
 My principal source is the **[FY2025 audited consolidated filing (NGX Document Library)](https://doclib.ngxgroup.com/Financial_NewsDocs/DANGOTE_CEMENT_PLC_-_2025_AUDITED_FINANCIAL_STATEMENTS.pdf)**. FY2024 comparatives are reported in that document. For FY2023, I used the **[FY2024 Annual Report](https://cement.dangote.com/wp-content/uploads/2025/05/Dangote-Cement-FY-2024-Annual-Report.pdf)**. See [my source and interpretation register](docs/sources.md) for line-item provenance, including the cash/overdraft bridge.
 
-I keep reported numbers separate from analytical definitions. For example, the simple `operating cash flow - cash PPE - cash intangibles` calculation is a **cash-flow proxy**, not unlevered free cash flow available to the firm. I won't present it as a completed DCF.
+My **valuation uses mixed-date inputs** (the most recent available H1 2026 cash/debt and Oct 2026 market quotes), so its results are not contemporaneous point-in-time fair values. My share values are purely illustrative. I keep reported numbers separate from analytical definitions. For example, the simple `operating cash flow - cash PPE - cash intangibles` calculation is a **cash-flow proxy**, not unlevered free cash flow available to the firm. I won't present it as a completed DCF.
 
 ---
 
