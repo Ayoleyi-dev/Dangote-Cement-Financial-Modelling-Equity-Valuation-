@@ -1,8 +1,8 @@
-# Learning notes: how I read the statements
+# Reading the three financial statements
 
 ## 1. Income statement: profitability, not cash
 
-**Revenue** measures sales recognised in the accounting period. **Profit after tax** is what remains after costs and taxes according to accrual accounting. Profit can grow while the amount of cash in the bank falls.
+Revenue tells me what the company earned from sales during a period. Profit after tax tells me what remained after the recorded costs and tax expense. Those are not the same as cash received: customers may still owe money, and some expenses are recorded before cash is paid.
 
 FY2025: ₦4,306,704m revenue and ₦1,014,921m net profit. The *net profit margin* is simply profit/revenue.
 
@@ -19,7 +19,7 @@ Equity       = 2,620,136
 Check        = 6,040,727 - 3,420,591 - 2,620,136 = 0
 ```
 
-That zero is important: the data are consistent at this basic level.
+The check returns zero, so the figures satisfy the accounting equation. That is a good data-quality check, although it doesn't tell me whether every item has been classified correctly.
 
 ## 3. Cash flow: what money actually moved?
 
@@ -29,7 +29,7 @@ The cash flow statement separates:
 - Investing: cash for investment / disposals / qualifying related financing items.
 - Financing: debt raised or repaid, dividends and financing cash payments.
 
-FY2025 Group operating cash flow is ₦1,710,762m. This is **not the same** as FY2025 profit of ₦1,014,921m.
+FY2025 Group operating cash flow is ₦1,710,762m. That is different from the ₦1,014,921m of reported profit. It is why I check cash generation alongside earnings rather than treating profit as spendable cash.
 
 ## 4. Cash balance bridge
 
@@ -43,7 +43,7 @@ The FY2025 cash flow shows ₦497,428m **cash** acquisition of property, plant a
 
 A full enterprise DCF discounts unlevered free cash flows (FCFF), estimates terminal value, and bridges enterprise value to equity. My current simple cash flow proxy (CFO less cash PPE and intangible purchases) is **not FCFF**. I won't confuse the two.
 
-## Questions I'll investigate next
+## Questions I am carrying into the forecast
 
 1. Why did FY2025 profit grow much faster than revenue?
 2. How much of the performance relates to cost-of-sales trends versus finance and FX items?
