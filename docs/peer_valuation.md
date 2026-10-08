@@ -1,5 +1,5 @@
-# Nigerian cement peers — corrected FY2025 P/E analysis
-**Snapshot:** prices from 7 October 2026, audited FY2025 EPS. 2025 EPS is not a 2026 TTM denominator.
+# Comparing Dangote Cement with two listed peers
+I used the **7 October 2026 share prices** and **FY2025 audited earnings per share** for Dangote Cement, BUA Cement and Lafarge Africa. This gives a historical-earnings comparison; it is **not** an October 2026 trailing-twelve-month P/E.
 
 | Ticker | Price (₦) | FY2025 audited EPS (₦) | Retrospective P/E |
 |---|---:|---:|---:|
@@ -7,7 +7,7 @@
 | BUACEMENT | 297.00 | 10.51 | 28.26× |
 | LAFARGE | 355.00 | 16.96 | 20.93× |
 
-My unweighted two-company peer median = **24.60×**, giving a historical EPS cross-check of **₦1472.27 per DANGCEM share**. This replaces my older rounded-EPS analysis (₦10.00 for BUA and ₦17.00 for Lafarge). I corrected those inputs after auditing the statements; I will not conceal the revision. With only two peers and different company geographies, scale, growth and capital structures, this is **not** a price target.
+The two-peer average P/E is **24.60×**. Applying it to Dangote Cement's FY2025 EPS gives an indicative figure of **₦1,472.27 per share**. My first pass used rounded EPS for BUA and Lafarge; I replaced those with the audited figures of **₦10.51** and **₦16.96** after checking the statements. With only two peers—and differences in business mix, size and capital structure—I would not use this result alone as a price target.
 
 - BUA audited FY2025 EPS ₦10.51 (Note 28): https://www.buacement.com/documents/BUA%20Cement%20Full%20Year%202025%20Audited%20Report%20and%20Financial%20Statements2026030205175520260310051655.pdf
 - Lafarge Group basic EPS 1,696 kobo = ₦16.96 (Note 25): https://fliphtml5.com/wsea/rfux/Lafarge_Africa_Plc_-_2025_Lafarge_Annual_Report_and_Accounts/
