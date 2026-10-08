@@ -1,34 +1,17 @@
-# Phase 4 — Nigerian cement peers and P/E cross-check
+# Nigerian cement peers — corrected FY2025 P/E analysis
+**Snapshot:** prices from 7 October 2026, audited FY2025 EPS. 2025 EPS is not a 2026 TTM denominator.
 
-**Research snapshot: 8 October 2026; market prices: 7 October 2026; accounts: FY2025.**
-I selected **BUA Cement and Lafarge Africa** because both are NGX-listed Nigerian cement producers. Dangote Cement is shown as the target only and is **not included in the peer mean**.
+| Ticker | Price (₦) | FY2025 audited EPS (₦) | Retrospective P/E |
+|---|---:|---:|---:|
+| DANGCEM | 1,066.70 | 59.86 | 17.82× |
+| BUACEMENT | 297.00 | 10.51 | 28.26× |
+| LAFARGE | 355.00 | 16.96 | 20.93× |
 
-## Sources and data-quality treatment
+My unweighted two-company peer median = **24.60×**, giving a historical EPS cross-check of **₦1472.27 per DANGCEM share**. This replaces my older rounded-EPS analysis (₦10.00 for BUA and ₦17.00 for Lafarge). I corrected those inputs after auditing the statements; I will not conceal the revision. With only two peers and different company geographies, scale, growth and capital structures, this is **not** a price target.
 
-- FY2025 DANGCEM audited Group profit and EPS: https://doclib.ngxgroup.com/Financial_NewsDocs/DANGOTE_CEMENT_PLC_-_2025_AUDITED_FINANCIAL_STATEMENTS.pdf
-- BUA Cement FY2025 company AGM release: https://buacement.com/pressreleases/BUA-CEMENT-EXCITES-SHAREHOLDERS-WITH-STRONG-2025-FINANCIAL-PERFORMANCE%2C-APPROVES-N10.00-DIVIDEND-PER-SHARE?id=28
-- Lafarge Africa FY2025 issuer release: https://www.lafarge.com.ng/lafarge-africa-plc-hits-n11-trillion-revenue-milestone-profit-tax-rises-170-411bn-2025-1
-- DANGCEM historical close: https://ng.investing.com/equities/dangcem-historical-data
-- BUA Cement close: https://ng.investing.com/equities/bua-cement-plc-historical-data
-- Lafarge Africa close: https://ng.investing.com/equities/wapco-historical-data
-- Audited issuer-report portals: https://www.buacement.com/financialreport/ and https://www.lafarge.com.ng/financial-reports
+- BUA audited FY2025 EPS ₦10.51 (Note 28): https://www.buacement.com/documents/BUA%20Cement%20Full%20Year%202025%20Audited%20Report%20and%20Financial%20Statements2026030205175520260310051655.pdf
+- Lafarge Group basic EPS 1,696 kobo = ₦16.96 (Note 25): https://fliphtml5.com/wsea/rfux/Lafarge_Africa_Plc_-_2025_Lafarge_Annual_Report_and_Accounts/
+- Dangote audited FY2025 Group EPS ₦59.86: https://doclib.ngxgroup.com/Financial_NewsDocs/DANGOTE_CEMENT_PLC_-_2025_AUDITED_FINANCIAL_STATEMENTS.pdf
+- Reference prices recorded in `data/peers/issuer_prices_earnings.csv`.
 
-**Critical caution:** BUA and Lafarge press releases give **rounded FY2025 EPS (₦10 and ₦17)** and rounded financial totals. These preliminary P/E calculations are **indicative** and may differ from precisely calculated multiples using the signed financial statements. The BUA press-release EPS and PAT do not cleanly infer the same share count at the rounded precision; I have not reverse-engineered a share count from them.
-
-## Formula
-
-```
-FY2025 trailing P/E = 7 Oct 2026 share close / issuer FY2025 EPS
-Peer reference P/E = arithmetic mean or median of BUA and Lafarge trailing P/E
-Indicative DANGCEM value per share = peer reference P/E × FY2025 DANGCEM EPS
-```
-
-This compares an October 2026 price with FY2025 earnings: a **historical trailing-year proxy**, not TTM as of October 2026. There are only **two peers**. Growth, geographic exposure, scale, liquidity and ownership differ across them.
-
-## Missing EV/EBITDA evidence
-
-A rigorous peer EV/EBITDA model needs **same-date equity market capitalisation, shares, debt, cash, leases, NCI and consistently defined 2025/TTM EBITDA** for every company. I found issuer annual reports but did not verify this full set of figures in the current audit. Therefore the model **must not** report invented EV/EBITDA or implied values from incomplete inputs.
-
-## Interpretive warning
-
-P/E multiplies equity earnings and differs from DCF enterprise valuation. Neither should be presented as a validated investment recommendation. I will revisit the peer set, audited precision, interim earnings and capital structures before calling this research-ready.
+I have now separately developed a [dated EV/EBITDA cross-check](ev_ebitda_research.md) with cash, borrowing and lease entries and an explicit EBITDA-definition audit. Comparing two approaches is useful, but they are both affected by historical period selection and the small peer set.
