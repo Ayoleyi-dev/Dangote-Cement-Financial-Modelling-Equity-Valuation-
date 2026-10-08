@@ -1,9 +1,8 @@
-# Dangote Cement | Power BI Investment Dashboard
+# Building the Dangote Cement dashboard in Power BI
 
-**Status:** data model + DAX + theme + reproducible browser preview.
-**This is not a .pbix or a Power BI Desktop-tested .pbip file.** Power BI Desktop is required to assemble, open and save the native report. The GitHub repository remains on **development**.
+I prepared the data tables, calculations, layout, colour theme and browser preview to make the report easier to build in Power BI Desktop. I still need to assemble and verify the native Power BI file; the HTML preview is a separate way to review the design. All changes remain on **`development`**.
 
-## What I made
+## Files and what they do
 
 | Asset | Role |
 |---|---|
@@ -30,7 +29,7 @@ python dashboard/scripts/build_data.py
 python dashboard/scripts/test_data.py
 \`\`\`
 
-## Power BI Desktop steps
+## Assemble the report in Power BI Desktop
 
 1. On Windows, open Power BI Desktop. Use **Home → Get data → Text/CSV** to import **each of the eight CSV files** in \`dashboard/data/\`. See Microsoft's official [Text/CSV connector guide](https://learn.microsoft.com/en-us/power-query/connectors/text-csv).
 2. In Power Query verify **Year** and **SortOrder** are Whole Number; the NGNm/ratio/share-price columns are Decimal Number; date-status columns are Text. Keep company tickers and date-as-of fields as **Text** for this snapshot. Select **Close & Apply**.
@@ -75,7 +74,7 @@ python dashboard/scripts/test_data.py
 - Top-level cards large with units: **₦ trillion** or **₦ billion** explicitly. Native model stays in ₦ million.
 - Footers: "Historical FY2023–25 / projected FY2026–30 | reference market date 7 Oct 2026 | educational research model".
 
-## Open limitations
+## What still needs checking
 
 - The preview is **not** a Power BI report, and does not contain the genuine Power BI filter engine or Desktop visuals. It is a visual companion to the actual CSV+DAX import kit.
 - The DCF/WACC model still contains uncalibrated cost-of-capital and reinvestment assumptions.
