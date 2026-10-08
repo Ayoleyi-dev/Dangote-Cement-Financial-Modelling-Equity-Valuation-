@@ -4,7 +4,7 @@
 
 I'm building this project to demonstrate how I move from historical company accounts to an evidence-based equity valuation. My background is in data analytics, so I am deliberately treating financial reporting as a data-quality problem first: source the numbers, reproduce the statements, reconcile them, and *only then* forecast or value the business.
 
-> **Status as of 8 October 2026:** Historical Group results, an illustrative FY2026–FY2030 three-statement forecasting engine, and a **Phase 3 DCF/WACC prototype** with downside/base/upside cases and WACC/terminal-growth sensitivity. My share values are learning-model outputs, **not verified fair-value targets, company guidance or investment recommendations**.
+> **Status as of 8 October 2026:** Phase 4 now includes **corrected audited FY2025 peer EPS**, a source-aware **EV/EBITDA peer comparison**, and **beta/capex stress-test scripts** alongside the existing historical, forecasting and DCF prototype. The models are educational; results are **not fair-value targets or investment advice**.
 
 ## What I've built
 
@@ -17,6 +17,8 @@ I'm building this project to demonstrate how I move from historical company acco
 - **Forecasting engine:** editable scenario drivers, profit and cash flow projections, balance-sheet equation and cash bridge.
 - **Scenario outputs:** [Downside](data/forecasts/downside.csv), [Base](data/forecasts/base.csv) and [Upside](data/forecasts/upside.csv) as CSVs for GitHub review. Regenerate after editing assumptions.
 - **Valuation prototype:** FCFF, scenario enterprise value, EV-to-equity bridge, nominal WACC, terminal value, and WACC/g sensitivity. See [my valuation methodology](docs/valuation_methodology.md) for major limitations.
+- **Extended peer research:** [corrected P/E inputs](docs/peer_valuation.md), [dated EV/EBITDA calculations](docs/ev_ebitda_research.md), and machine-readable debt/cash/lease inputs; BUA EBITDA remains vendor-sourced.
+- **Assumption challenges:** [cost-of-capital and capex audit](docs/assumption_calibration.md) with repeatable beta and capex sensitivity tests.
 
 ## A few findings from the accounts
 
@@ -51,6 +53,9 @@ scripts/
   validate.py              reproducible historical checks
   forecast.py              downside/base/upside model and balance-sheet checks
   valuation.py             FCFF DCF with WACC and sensitivity validation
+  ev_ebitda.py             peers market-cap to enterprise-value bridge
+  comparables.py           audited FY2025 EPS peer P/E
+  assumption_stress.py     DCF beta and capex sensitivity
 .github/workflows/
   validate.yml             CI runs checks when changed
 ```
@@ -64,6 +69,10 @@ python scripts/forecast.py --check
 python scripts/forecast.py --export
 python scripts/valuation.py --check
 python scripts/valuation.py --export
+python scripts/comparables.py --check
+python scripts/ev_ebitda.py --check
+python scripts/assumption_stress.py --check
+# Optional CSV refresh: python scripts/ev_ebitda.py --export
 ```
 
 No credentials or paid datasets are needed. The model is constructed from the audited public disclosures. Data in the CSV files are integers in **₦ million**, except earnings per share (₦ per share).
@@ -81,8 +90,8 @@ I added a [dated input audit](docs/valuation_input_audit.md) and a [Nigerian cem
 1. **Historical statements & checks — COMPLETE for FY2024–FY2025**. FY2023 profit or loss is present; FY2023 balance sheet and cash flow remain to be added.
 2. **Financial performance analysis — IN PROGRESS**. Examine margins, working capital, net debt, cash generation and one-off items.
 3. **Forecast assumptions & three-statement model — WORKING PROTOTYPE**. Scenario-based income, cash flow and balance sheet model passes cross-statement checks. Sources and debt/capex schedules need deepening.
-4. **Equity valuation — PROTOTYPE + PEER CROSS-CHECK**. Assumption-led FCFF DCF, October reference WACC, dated H1 balance-sheet equity bridge and sensitivity. Requires research-grade calibration and segment forecasts.
-5. **Investment note and dashboard — PLANNED**. Communicate investment thesis, risks, limitations and scenarios.
+4. **Equity valuation — DCF + PEER EV/EBITDA PROTOTYPES**. Assumption-led FCFF DCF, October reference WACC, dated H1 balance-sheet equity bridge and sensitivity. Requires research-grade calibration and segment forecasts.
+5. **Investment note and Power BI dashboard — PLANNED**, after source/assumption validation. Communicate investment thesis, risks, limitations and scenarios.
 
 ## Sources & research discipline
 
