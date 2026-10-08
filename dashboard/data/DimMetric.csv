@@ -1,0 +1,17 @@
+MetricKey,MetricLabel,Category,Unit
+Revenue,Revenue,Income,NGN million
+GrossProfit,Gross profit,Income,NGN million
+EBIT,Operating profit (EBIT),Income,NGN million
+PAT,Profit after tax,Income,NGN million
+PBT,Profit before tax,Income,NGN million
+CFO,Operating cash flow,Cash flow,NGN million
+Cash,Cash and equivalents (balance sheet),Balance sheet,NGN million
+Debt,Current + noncurrent financial liabilities,Balance sheet,NGN million
+Equity,Total shareholders' equity (including NCI),Balance sheet,NGN million
+Assets,Total assets,Balance sheet,NGN million
+Liabilities,Total liabilities,Balance sheet,NGN million
+CashCapex,Cash payments for PPE + intangible purchases,Cash flow,NGN million
+DandA,Depreciation & amortisation,Cash flow,NGN million
+FCFF,Analyst-estimated unlevered free cash flow,Valuation,NGN million
+NWC,Simplified net working capital,Forecast,NGN million
+ChangeNWC,Change in simplified net working capital,Forecast,NGN million
