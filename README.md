@@ -15,6 +15,7 @@ I'm building this project to demonstrate how I move from historical company acco
 - **Source register:** primary company filings and corresponding page numbers.
 - **Validation scripts:** repeatable, standard-library-only assertions for main statement totals and for projected balance sheets/cash flows.
 - **Forecasting engine:** editable scenario drivers, profit and cash flow projections, balance-sheet equation and cash bridge.
+- **Scenario outputs:** [Downside](data/forecasts/downside.csv), [Base](data/forecasts/base.csv) and [Upside](data/forecasts/upside.csv) as CSVs for GitHub review. Regenerate after editing assumptions.
 
 ## A few findings from the accounts
 
@@ -36,6 +37,7 @@ data/
   income_statement.csv     FY2023–FY2025 Group history
   balance_sheet.csv        FY2024–FY2025 Group history
   cash_flow.csv            FY2024–FY2025 Group history
+  forecasts/               Derived scenario projections (not reported figures)
 assumptions/
   scenarios.csv            FY2026–FY2030 editable analyst assumptions
 docs/

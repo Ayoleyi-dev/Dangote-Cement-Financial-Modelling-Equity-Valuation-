@@ -5,7 +5,7 @@ I am moving from **audited actuals** to a basic three-statement *teaching model*
 ## Source anchors
 
 - [Audited FY2025 consolidated statements, NGX PDF](https://doclib.ngxgroup.com/Financial_NewsDocs/DANGOTE_CEMENT_PLC_-_2025_AUDITED_FINANCIAL_STATEMENTS.pdf) — consolidated profit or loss p20, financial position p22, cash flow p25 (printed pages).
-- [Company's official H1 2026 investor centre](https://investors.dangote.com/financials) — H1 2026 *unaudited* figures: revenue about ₦2,513.9bn, EBITDA ₦1,188.3bn, PAT ₦638.5bn. Rounded presentation figures; not inputs to the audited FY2025 base.
+- [Company's official H1 2026 investor centre](https://doclib.ngxgroup.com/Financial_NewsDocs/47629_DANGOTE_CEMENT_PLC-H1_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf) — H1 2026 *unaudited* figures: revenue about ₦2,513.9bn, EBITDA ₦1,188.3bn, PAT ₦638.5bn. Rounded presentation figures; not inputs to the audited FY2025 base.
 - [FY2025 ratio review](financial_performance.md) and the [source register](sources.md).
 
 ## Why the model is 'three statement'
