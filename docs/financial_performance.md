@@ -1,6 +1,6 @@
-# Financial performance analysis | FY2024–FY2025
+# Financial performance: what changed between 2024 and 2025?
 
-I use the **audited consolidated Group statements** for this analysis. Monetary figures are in **₦ million** unless stated otherwise. The purpose of this stage is to understand the business *before* making any assumptions about valuation.
+I started with the audited Group accounts because I wanted to understand the business before forecasting it. The tables below keep the figures in **₦ million**, unless I say otherwise. I calculate ratios directly from those figures rather than copying rounded percentages from a presentation.
 
 ## Profitability
 
@@ -14,9 +14,9 @@ I use the **audited consolidated Group statements** for this analysis. Monetary 
 | Effective tax rate | 31.30% | 33.78% | Tax expense / profit before tax |
 | Finance costs / revenue | 19.56% | 8.16% | Absolute finance costs / revenue |
 
-**My first interpretation:** revenue grew **20.28%**, yet after-tax profit grew **101.67%**. Gross and operating margins rose substantially. Finance costs also fell from ₦700,299m to ₦351,504m. The combined effect helps explain why after-tax profit outpaced sales growth.
+Revenue increased **20.28%**, but after-tax profit grew **101.67%**. I traced some of that gap to stronger gross and operating margins. Finance costs also declined from **₦700,299m** to **₦351,504m**, lifting profit further.
 
-This isn't proof that all of the increase is recurring: I need to investigate pricing, fuel and energy costs, financing, currency effects and other non-operating items before assuming these margins persist in a forecast.
+The next question is how much of that improvement can last. Pricing, fuel, logistics, financing and foreign-exchange movements could all change. That's why my forecast uses alternative margin assumptions rather than carrying one year's result forward unchanged.
 
 ## Liquidity, cash and capital allocation
 
@@ -29,7 +29,7 @@ This isn't proof that all of the increase is recurring: I need to investigate pr
 | Simple post-capex operating cash proxy (₦m) | 397,730 | 1,213,036 | CFO − cash PPE − cash intangible purchases |
 | Reported net debt (₦m) | 2,061,948 | 682,921 | Note 30.1 company-defined net debt |
 
-**Important qualifications:**
+**What I would not infer from these figures:**
 
 1. The *simple post-capex cash proxy* is **not FCFF** (free cash flow to the firm). Interest classification, taxes, operating working capital and other cash movements require care in a DCF.
 2. FY2025 investing cash flow was **positive ₦620,354m**, driven in part by a **₦1,037,232m net parent-company-related loan inflow**. Positive investing cash flow alone does **not** mean the company stopped investing in its plants.
