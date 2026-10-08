@@ -20,3 +20,5 @@ jobs:
       - run: python scripts/comparables.py --check
       - run: python scripts/ev_ebitda.py --check
       - run: python scripts/assumption_stress.py --check
+      - run: python dashboard/scripts/build_data.py
+      - run: python dashboard/scripts/test_data.py
