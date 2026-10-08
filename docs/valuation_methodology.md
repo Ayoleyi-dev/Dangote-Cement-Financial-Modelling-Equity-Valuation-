@@ -1,10 +1,10 @@
-# Phase 3 — Illustrative DCF and WACC methodology
+# How I built the discounted cash-flow model
 
-**As-of reference: 8 October 2026.** My DCF is a transparent demonstration of the financial modelling mechanics, **not** a point-in-time institutional research target or a trade signal.
+**Research reference: 8 October 2026.** I built this DCF to see how projected operating cash flow translates into an estimated enterprise value, and which assumptions have the greatest influence. It is a working valuation model, not a published investment recommendation.
 
 ## Inputs, units and date discipline
 
-I read FY2026E–FY2030E EBITDA-related forecast lines from the existing scenario outputs, not from undisclosed vendor estimates. Source and analyst inputs are explicitly labelled in [valuation_inputs.csv](../assumptions/valuation_inputs.csv).
+The cash flows come from my own FY2026–FY2030 scenario forecasts. I keep company disclosures, dated market observations and my assumptions separate in [valuation_inputs.csv](../assumptions/valuation_inputs.csv), so each part of the discount rate and equity bridge can be questioned and changed.
 
 | Input | Value | Source/reporting date | Status |
 | --- | ---: | --- | --- |
