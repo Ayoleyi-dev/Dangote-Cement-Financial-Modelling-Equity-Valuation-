@@ -17,3 +17,4 @@ jobs:
       - run: python scripts/analyze.py --check
       - run: python scripts/forecast.py --check
       - run: python scripts/valuation.py --check
+      - run: python scripts/comparables.py --check
