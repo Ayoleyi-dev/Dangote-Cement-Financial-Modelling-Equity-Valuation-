@@ -1,20 +1,20 @@
 # Dangote Cement Plc | Equity Research Case Study
 
-**NGX:** DANGCEM · **Research snapshot:** 8 October 2026 · **Status:** Research draft for review, not a trade recommendation
+**NGX:** DANGCEM · **Research date:** 8 October 2026 · **Status:** Working research draft
 
 **Author:** Ayoleyi Gbenga-Ayodeji · Independent portfolio research
 
-> **Research qualification.** I present audited FY2025 Group financial statements, available unaudited H1 2026 updates, and clearly labelled *illustrative* forecasting and valuation models. My DCF and peer multiples are not research-grade price targets. There is no BUY/HOLD/SELL rating because WACC inputs, operating reinvestment, peer comparability and point-in-time bridge inputs require further validation.
+> I wrote this report to bring the work in my financial model into one place: what Dangote Cement reported, what changed in the business, and what the numbers might mean for a valuation. Historical results are sourced from company disclosures. Forecasts and valuations are my own scenarios, not company guidance. I am not assigning a BUY, HOLD or SELL rating because several important assumptions still need validation.
 
-## 1. Executive view
+## 1. What I found
 
-Dangote Cement entered 2026 after a strong FY2025: Group revenue reached **₦4,306.7bn** (+20.3%), operating profit **₦1,765.3bn**, and profit after tax **₦1,014.9bn** (+101.7%). Reported FY2025 EBITDA was approximately **₦1,981.1bn** (46.0% margin). These were not simply volume-led results: management reported **27.5 million tonnes** of Group cement and clinker volume, down **0.9%**, with margin improvement and a favorable Nigerian energy and pricing mix. [S1–S2]
+Dangote Cement had a striking FY2025. Group revenue reached **₦4,306.7bn**, up **20.3%**, while profit after tax more than doubled to **₦1,014.9bn**. Operating profit was **₦1,765.3bn**, and the company reported EBITDA of about **₦1,981.1bn**, a **46.0% margin**. Yet Group cement and clinker volumes edged down **0.9%** to **27.5 million tonnes**. That tells me the year deserves a closer look at pricing, operating costs, product mix and financing—not just sales volumes. [S1–S2]
 
-The audited Group balance sheet ended December 2025 with **₦6,040.7bn** assets, **₦3,420.6bn** liabilities and **₦2,620.1bn** equity. FY2025 operating cash flow was **₦1,710.8bn**, while *cash paid* for property, plant and equipment was **₦497.4bn**, distinct from accounting PPE additions. [S1]
+The balance sheet also changed: Group assets stood at **₦6,040.7bn**, liabilities at **₦3,420.6bn**, and equity at **₦2,620.1bn** at December 2025. The business generated **₦1,710.8bn in operating cash flow**. It paid **₦497.4bn** in cash for property, plant and equipment, which is different from the value of PPE additions booked in the accounts. [S1]
 
-The company then reported **H1 2026 revenue ₦2,513.9bn, EBITDA ₦1,188.3bn, PAT ₦638.5bn and net cash ₦215.2bn** at June 2026. These interim numbers are not FY2026 audited figures and I do not annualize them blindly. [S3]
+By June 2026, the company reported **H1 revenue of ₦2,513.9bn**, **EBITDA of ₦1,188.3bn**, **profit after tax of ₦638.5bn** and **net cash of ₦215.2bn**. These are interim figures. They help me challenge the forecasts, but they do not tell me what the full year will look like on their own. [S3]
 
-### Research questions
+### Questions I still need to answer
 
 - Can operating margins and the mix of Nigeria versus Pan-Africa earnings be maintained through energy and foreign-exchange changes?
 - How much cash will maintenance, expansion, debt service and working capital require?
@@ -25,7 +25,7 @@ The company then reported **H1 2026 revenue ₦2,513.9bn, EBITDA ₦1,188.3bn, P
 
 Dangote Cement operates a multi-country cement business with reported installed capacity of **55.0 million tonnes per annum** and operations in multiple African markets. It commissioned a **3Mta Côte d'Ivoire grinding facility** in 2025. The FY2025 results release attributes growth partly to pricing discipline, improved energy mix, operational cost control and exports, including an **18.6%** increase in Nigeria cement and clinker export volumes. [S2, S4]
 
-My preliminary *supportive case* is that installed capacity, export infrastructure and Nigerian operating efficiency could support cash generation. The *countercase* is that cement demand is cyclical, selling prices can lag inflation or energy costs, and additional capacity requires significant cash investment; the FY2025 margin increase should not be assumed to persist.
+There are reasons to be constructive about the business: established capacity, export routes and stronger Nigerian operations can support future cash generation. There are also reasons to be careful. Cement demand moves with construction activity, energy and distribution costs can rise quickly, and new plants take cash before they earn it back. I would not carry the FY2025 margin straight into every forecast year without testing those pressures.
 
 ## 3. Historical financial analysis
 
@@ -40,7 +40,7 @@ My preliminary *supportive case* is that installed capacity, export infrastructu
 
 *I computed margins from the source-linked historical model. FY2023 income data are taken from the 2024 annual report's comparison; FY2024–2025 from audited Group statements. Values rounded.* [S1, S5]
 
-The FY2025 income statement shows **₦2,672.3bn** gross profit, **₦1,532.7bn** profit before tax and **₦517.7bn** income tax expense. Finance costs dropped from **₦700.3bn in 2024 to ₦351.5bn in 2025**. The combination of stronger gross profitability and lower finance costs helps explain the 101.7% PAT growth; it does not establish an equal improvement in normalized sustainable earnings. [S1]
+The FY2025 income statement shows **₦2,672.3bn** gross profit, **₦1,532.7bn** profit before tax and **₦517.7bn** income tax expense. Finance costs dropped from **₦700.3bn in 2024 to ₦351.5bn in 2025**. Together, improved gross profit and lower finance costs help explain the jump in after-tax profit. But I still need to separate what looks repeatable from what reflects financing, prices and other conditions specific to that year. [S1]
 
 ### Cash conversion and capital investment
 
@@ -50,7 +50,7 @@ The FY2025 cash-flow statement ended with **₦362.6bn cash equivalents**, while
 
 ## 4. Operating forecast framework (illustrative)
 
-I built downside, base and upside scenarios for FY2026–2030. The starting point is FY2025 audited Group data; forward assumptions remain editable in `assumptions/scenarios.csv`. The model uses revenue growth, EBIT margin, cash capex intensity, depreciation, tax, interest, payout and a simplified net-working-capital proxy. It is an *educational linked three-statement model*, not management guidance or a segment-by-segment operating forecast.
+To explore the next five years, I built three scenarios starting from the FY2025 audited accounts. The inputs in `assumptions/scenarios.csv` control sales growth, operating margin, capital spending, depreciation, taxes, interest, dividends and working capital. The projected statements reconcile with one another, but the model is still deliberately simplified. It does not yet predict volumes and prices separately for Nigeria and the rest of Africa.
 
 | Scenario | FY2026E revenue (₦tn) | FY2026E PAT (₦tn) | FY2030E revenue (₦tn) |
 |---|---:|---:|---:|
@@ -78,7 +78,7 @@ The equity bridge uses **June 2026 net cash ₦215.2bn**, book non-controlling i
 
 For the Base scenario, about **51.5% of discounted enterprise value comes from terminal value**, meaning long-run cash flow and WACC assumptions have substantial influence. My 25-cell WACC/terminal-growth sensitivity table is published in `data/valuations/sensitivity_base.csv`.
 
-**DCF limitations:** no company-level market beta calibration, simplified cash-flow timing, no separately modeled debt maturity schedule, imprecise operating working capital, non-controlling interest using book value, no full Q3 2026 bridge and insufficient segment-level maintenance/expansion capex research. I do not interpret the ₦389.64 output as a defendable fair value.
+**What limits this DCF:** the beta and borrowing-cost estimates are not calibrated; the 2026 remaining-year cash flow is prorated; debt maturities, operating working capital and maintenance versus expansion capex need more detail. I also used book value for non-controlling interests and June balance-sheet data against an October market reference. For these reasons, **₦389.64 is a model result—not a fair-value conclusion**.
 
 ## 6. Relative valuation (historical peer comparison)
 
@@ -91,7 +91,7 @@ I use the NGX-listed **BUA Cement** and **Lafarge Africa** as an initial local p
 | Lafarge Africa | 20.93× | 12.50× |
 | **Peer mean (excluding Dangote)** | **24.60×** | **15.55×** |
 
-**Illustrative target-company mechanical cross-checks:** applying peer-mean P/E to Dangote's FY2025 EPS implies **₦1,472.27/share**; applying peer-mean EV/EBITDA to its reported FY2025 EBITDA and bridging to equity with FY2025 financial liabilities, cash and book NCI implies **₦1,792.57/share**. These values are *not* price targets and should not be averaged with the DCF without validating differences in definitions, dates, reinvestment and geographic exposure.
+Applying the two-peer average P/E to Dangote Cement's FY2025 EPS gives **₦1,472.27 per share**. Using the peer EV/EBITDA average and then adjusting for Dangote's historical financial liabilities, cash and non-controlling interests gives **₦1,792.57 per share**. I view both as cross-checks, not targets. Two peers cannot capture every difference in geography, growth, balance sheets or accounting policies.
 
 BUA FY2025 EBITDA remains sourced to a third-party provider pending a line-by-line audit; Lafarge EBITDA is reconstructed as operating profit plus depreciation and amortisation, not a harmonized management-adjusted measure. See `docs/ev_ebitda_research.md` for line-item provenance and caveats. [S8–S9]
 
@@ -101,11 +101,11 @@ BUA FY2025 EBITDA remains sourced to a third-party provider pending a line-by-li
 
 **Risks to monitor:** (i) domestic demand and pricing pressure; (ii) diesel, gas, electricity and logistics costs; (iii) foreign-exchange translation and Pan-Africa operating performance; (iv) execution, timing and financing of expansion capex; (v) debt and tax treatments; (vi) environmental and emissions regulations; (vii) market data vendor differences, beta estimation and liquidity; and (viii) inconsistent peer EBITDA definitions.
 
-**Why valuations disagree:** my DCF discounts modeled long-term cash flows using a high provisional nominal WACC; historical market multiples capitalize FY2025 earnings, may embed optimistic growth and can reflect structural differences among companies. Their divergence indicates model risk and comparability questions, **not proof of under- or overvaluation**.
+**Why the methods disagree:** the DCF depends heavily on a provisional discount rate and future reinvestment assumptions. The multiples reflect what investors were paying for other businesses' historical earnings, each with its own outlook and risks. The disagreement makes me less confident in a single-point estimate, not more confident that the market has made a mistake.
 
 ## 8. Research decision and next validation gates
 
-**Research position: no formal recommendation at this stage.** The study demonstrates how I translate company accounts into reproducible forecasts, enterprise-value bridges, cash-flow discounting and peer comparisons; it is not yet reliable enough for a live buy/sell decision.
+**My conclusion:** I am not making a formal investment recommendation yet. I have a working analytical framework and clear questions to investigate, but the evidence is not strong enough to support a buy-or-sell decision.
 
 Before issuing a share-price target, I would:
 1. Reconcile FY2026 nine-month financials and refresh the balance-sheet and market-price dates.
@@ -134,4 +134,4 @@ The GitHub `development` branch contains raw financial statement CSVs, analyst s
 
 ---
 
-*I prepared this as a portfolio case study to demonstrate financial modelling and investment research methods. I am not acting as an investment adviser, and I do not represent that this work has been independently reviewed by a regulated analyst.*
+*Independent portfolio research. The models are illustrative and have not been independently reviewed; this report is not investment advice.*
