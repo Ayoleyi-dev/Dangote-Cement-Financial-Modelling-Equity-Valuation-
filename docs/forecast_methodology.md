@@ -1,6 +1,6 @@
-# Phase 2 — Assumption-led operating forecast (FY2026–FY2030)
+# Forecasting Dangote Cement from 2026 to 2030
 
-I am moving from **audited actuals** to a basic three-statement *teaching model*. I deliberately separate source figures from analyst **assumptions**; forecasts are **not Dangote Cement guidance** or investment recommendations.
+I used the audited FY2025 Group accounts as a starting point and built three views of the next five years. Instead of hiding growth and margin estimates inside formulas, I keep them in a separate assumptions file. These are **my scenarios**, not forecasts issued by Dangote Cement.
 
 ## Source anchors
 
@@ -8,7 +8,7 @@ I am moving from **audited actuals** to a basic three-statement *teaching model*
 - [Company's official H1 2026 investor centre](https://doclib.ngxgroup.com/Financial_NewsDocs/47629_DANGOTE_CEMENT_PLC-H1_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf) — H1 2026 *unaudited* figures: revenue about ₦2,513.9bn, EBITDA ₦1,188.3bn, PAT ₦638.5bn. Rounded presentation figures; not inputs to the audited FY2025 base.
 - [FY2025 ratio review](financial_performance.md) and the [source register](sources.md).
 
-## Why the model is 'three statement'
+## How the three statements fit together
 
 The forecast simultaneously generates:
 1. **Income statement:** projected revenue, operating profit (EBIT), finance interest, tax and profit.
@@ -17,7 +17,7 @@ The forecast simultaneously generates:
 
 I test both **Assets − Liabilities − Equity = 0** and the **cash flow movement check = 0** each year, scenario by scenario.
 
-## Editable analyst assumptions — NOT sourced company guidance
+## Assumptions I can change
 
 All rows of [assumptions/scenarios.csv](../assumptions/scenarios.csv) are *illustrative*. They are distinct from audited data. These should be revisited before any valuation.
 
