@@ -1,6 +1,6 @@
-# Phase 4.2 — EV/EBITDA comparable-company research
+# A second comparison: enterprise value and EBITDA
 
-**Analysis snapshot:** 8 October 2026. This is a portfolio-learning analysis, not investment advice. I use the **7 October 2026 reference share prices** and **31 December 2025 balance-sheet / FY2025 EBITDA** inputs. This is not a single-date mark-to-market enterprise value; the mixed dates are openly disclosed. All monetary inputs are **₦ million**, and shares are in **millions**.
+P/E is useful, but it reflects each company's financing and tax position. I also compared enterprise values with EBITDA to look at the businesses before those costs. The calculation uses **7 October 2026 share prices** and **FY2025 EBITDA and 31 December 2025 balance sheets**. Because those dates differ, the multiples are only historical comparisons—not synchronized market valuations. Financial values are in **₦ million**, and share counts are in **millions**.
 
 ## My calculation
 
@@ -11,7 +11,7 @@ EV = market equity value + interest-bearing borrowing + leases − unrestricted 
 EV/EBITDA = EV / FY2025 EBITDA
 ```
 
-I use a common definition of enterprise value, but audited and issuer EBITDA definitions can still differ. I keep an explicit per-company `ebitda_basis` field rather than quietly describing these as identical.
+I can calculate enterprise value consistently in principle, but the EBITDA figures still need careful comparison: one company reports its own measure, another is reconstructed from accounting figures, and one uses a financial-data provider. I recorded the basis for each company in the input file instead of pretending they were identical.
 
 ## Source-provenance table
 
@@ -31,7 +31,7 @@ Sources:
 - BUA date-linked share quote: https://in.marketscreener.com/quote/stock/BUA-CEMENT-PLC-102186380/finances/
 - Lafarge dated price source: https://ng.investing.com/equities/wapco-historical-data
 
-## How I avoid common mistakes
+## Checks I made before comparing the multiples
 
 1. **I exclude Dangote itself** from the peer average. Two-peer mean and median happen to be identical.
 2. **I don't mix profit after tax with EV.** EV/EBITDA compares enterprise value to pre-financing operating earnings; P/E remains an equity-only multiple.
