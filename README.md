@@ -72,12 +72,16 @@ No credentials or paid datasets are needed. The model is constructed from the au
 
 I have started the [FY2024–FY2025 performance review](docs/financial_performance.md), including gross/operating/net margins, tax rate, cash conversion, working capital, cash capex and management-defined net debt. I compute these metrics from source CSVs with `python scripts/analyze.py`.
 
+## Phase 4 — Peer valuation and DCF input audit
+
+I added a [dated input audit](docs/valuation_input_audit.md) and a [Nigerian cement peer P/E comparison](docs/peer_valuation.md). The peer model uses BUA Cement and Lafarge Africa as two issuer-backed peers and keeps the resulting cross-check *indicative* because peer EPS is rounded. I explicitly withhold EV/EBITDA pending complete, consistent enterprise-value inputs. Reproduce with `python scripts/comparables.py --check`.
+
 ## My next milestones
 
 1. **Historical statements & checks — COMPLETE for FY2024–FY2025**. FY2023 profit or loss is present; FY2023 balance sheet and cash flow remain to be added.
 2. **Financial performance analysis — IN PROGRESS**. Examine margins, working capital, net debt, cash generation and one-off items.
 3. **Forecast assumptions & three-statement model — WORKING PROTOTYPE**. Scenario-based income, cash flow and balance sheet model passes cross-statement checks. Sources and debt/capex schedules need deepening.
-4. **Equity valuation — PROTOTYPE COMPLETE**. Assumption-led FCFF DCF, October reference WACC, dated H1 balance-sheet equity bridge and sensitivity. Requires research-grade calibration and segment forecasts.
+4. **Equity valuation — PROTOTYPE + PEER CROSS-CHECK**. Assumption-led FCFF DCF, October reference WACC, dated H1 balance-sheet equity bridge and sensitivity. Requires research-grade calibration and segment forecasts.
 5. **Investment note and dashboard — PLANNED**. Communicate investment thesis, risks, limitations and scenarios.
 
 ## Sources & research discipline
