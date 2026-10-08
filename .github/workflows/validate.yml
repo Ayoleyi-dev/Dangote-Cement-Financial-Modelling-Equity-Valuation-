@@ -18,3 +18,5 @@ jobs:
       - run: python scripts/forecast.py --check
       - run: python scripts/valuation.py --check
       - run: python scripts/comparables.py --check
+      - run: python scripts/ev_ebitda.py --check
+      - run: python scripts/assumption_stress.py --check
