@@ -4,7 +4,7 @@
 
 I'm building this project to demonstrate how I move from historical company accounts to an evidence-based equity valuation. My background is in data analytics, so I am deliberately treating financial reporting as a data-quality problem first: source the numbers, reproduce the statements, reconcile them, and *only then* forecast or value the business.
 
-> **Status as of 8 October 2026:** Historical financials and first-stage reconciliations complete for **FY2024–FY2025** (plus FY2023 income statement). Forecasts, discount-rate estimates and an equity valuation are **not yet completed**. Nothing in this repository is investment advice.
+> **Status as of 8 October 2026:** Audited FY2024–FY2025 Group history and FY2023 income statement verified. An **illustrative FY2026–FY2030 three-statement forecast** with downside/base/upside scenarios is now implemented. WACC, enterprise valuation and an equity price target are **not yet completed**. Forecast scenarios are analyst assumptions, not Dangote Cement guidance or investment advice.
 
 ## What I've built
 
@@ -13,7 +13,8 @@ I'm building this project to demonstrate how I move from historical company acco
 - **Historical cash flow:** FY2024–FY2025 operating, investing and financing activities.
 - **Reconciliation checks:** accounting equation, cash bridge, financing and capital expenditure classifications.
 - **Source register:** primary company filings and corresponding page numbers.
-- **Validation script:** repeatable, standard-library-only assertions for the main statement totals.
+- **Validation scripts:** repeatable, standard-library-only assertions for main statement totals and for projected balance sheets/cash flows.
+- **Forecasting engine:** editable scenario drivers, profit and cash flow projections, balance-sheet equation and cash bridge.
 
 ## A few findings from the accounts
 
@@ -26,7 +27,7 @@ I'm building this project to demonstrate how I move from historical company acco
 | Net operating cash flow | 821.2 | 1,710.8 |
 | Management-defined net debt | 2,061.9 | 682.9 |
 
-These are **historical reported values, not forecasts**. Revenue grew by about 20% in FY2025, while profit grew faster; I will investigate the underlying drivers before setting any future assumptions.
+These are **historical reported values, not forecasts**. Revenue grew by about 20% in FY2025, while profit grew faster. To test the next step, I built **explicit analyst assumption scenarios**, documented in [my forecast methodology](docs/forecast_methodology.md); these are *not management guidance*.
 
 ## Repo layout
 
@@ -35,11 +36,15 @@ data/
   income_statement.csv     FY2023–FY2025 Group history
   balance_sheet.csv        FY2024–FY2025 Group history
   cash_flow.csv            FY2024–FY2025 Group history
+assumptions/
+  scenarios.csv            FY2026–FY2030 editable analyst assumptions
 docs/
   sources.md               exact source links + interpretation notes
   learning_notes.md        explanation of what each reconciliation means
+  forecast_methodology.md  simplified forecast mechanics, caveats, H1 2026 context
 scripts/
-  validate.py              reproducible data checks, Python standard library
+  validate.py              reproducible historical checks
+  forecast.py              downside/base/upside model and balance-sheet checks
 .github/workflows/
   validate.yml             CI runs checks when changed
 ```
@@ -48,6 +53,9 @@ scripts/
 
 ```bash
 python scripts/validate.py
+python scripts/analyze.py --check
+python scripts/forecast.py --check
+python scripts/forecast.py --export
 ```
 
 No credentials or paid datasets are needed. The model is constructed from the audited public disclosures. Data in the CSV files are integers in **₦ million**, except earnings per share (₦ per share).
@@ -60,7 +68,7 @@ I have started the [FY2024–FY2025 performance review](docs/financial_performan
 
 1. **Historical statements & checks — COMPLETE for FY2024–FY2025**. FY2023 profit or loss is present; FY2023 balance sheet and cash flow remain to be added.
 2. **Financial performance analysis — IN PROGRESS**. Examine margins, working capital, net debt, cash generation and one-off items.
-3. **Forecast assumptions & three-statement model — PLANNED**. Research operating assumptions, tie the statements and show scenarios.
+3. **Forecast assumptions & three-statement model — WORKING PROTOTYPE**. Scenario-based income, cash flow and balance sheet model passes cross-statement checks. Sources and debt/capex schedules need deepening.
 4. **Equity valuation — PLANNED**. FCFF DCF, discount rate assumptions, enterprise-to-equity bridge and sensitivity.
 5. **Investment note and dashboard — PLANNED**. Communicate investment thesis, risks, limitations and scenarios.
 
