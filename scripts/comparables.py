@@ -2,7 +2,7 @@
 """Reproducible FY2025 EPS vs October 2026 peer P/E cross-check.
 
 Uses dated public inputs from data/peers/issuer_prices_earnings.csv.
-Does NOT invent EV/EBITDA or label old annual EPS as October TTM.
+Uses audited FY2025 per-share earnings; EV/EBITDA is in ev_ebitda.py.\nDoes not mislabel FY2025 annual EPS as an October 2026 TTM denominator.
 """
 import argparse
 import csv
@@ -39,8 +39,8 @@ def main():
         print(f"{x['ticker']}: ₦{float(x['price_ngn']):.2f}/₦{float(x['fy2025_eps_ngn']):.2f} = {x['trailing_fy2025_pe']:.2f}x")
     for k,v in r.items(): print(f"{k}: {v:.3f}")
     if args.check:
-        assert abs(next(x["trailing_fy2025_pe"] for x in rows if x["ticker"]=="BUACEMENT")-29.7)<1e-9
-        assert abs(next(x["trailing_fy2025_pe"] for x in rows if x["ticker"]=="LAFARGE")-355/17)<1e-9
+        assert abs(next(x["trailing_fy2025_pe"] for x in rows if x["ticker"]=="BUACEMENT")-297/10.51)<1e-9
+        assert abs(next(x["trailing_fy2025_pe"] for x in rows if x["ticker"]=="LAFARGE")-355/16.96)<1e-9
         assert len([x for x in rows if x["ticker"]!="DANGCEM"])==2
         assert r["peer_mean_pe"]==r["peer_median_pe"]
         print("PASS: dated prices, two-peer exclusion, EPS formulas")
