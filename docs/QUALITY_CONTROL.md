@@ -42,6 +42,14 @@ I rewrote the [project introduction](../README.md), [research report](../reports
 
 The technical documentation still includes enough detail to reproduce the work. I used the first person where I describe my decisions and research process, while keeping calculations and source labels objective.
 
+## Documentation and formatted report checks
+
+- **Markdown links:** I checked 20 relative links across 13 Markdown files in the development branch. **No broken internal paths found.**
+- **Formatted report:** I revised and rendered the editable Word report, then inspected the resulting five-page PDF. The cover, tables, figures, source notes and page numbers are legible.
+- **Model values in formatted report:** I checked that ₦389.64 (base DCF), ₦1,472.27 (peer P/E) and ₦1,792.57 (peer EV/EBITDA) are present and consistent with the CSV model outputs.
+- **Version caveat:** The Markdown report is the version-controlled research source. The companion Word/PDF documents were separately copyedited; an exact text-level parity comparison would be useful before formal publication.
+- **GitHub Actions:** The workflow now performs Python syntax compilation and calls `scripts/qc_release.py`. The latest commit currently has **no returned hosted status check**, so I cannot claim that CI itself has passed.
+
 ## Items that still need work
 
 These are not failed arithmetic tests; they are evidence or deliverable gaps.
