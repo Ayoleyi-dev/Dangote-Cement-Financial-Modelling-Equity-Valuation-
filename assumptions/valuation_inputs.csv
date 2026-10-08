@@ -1,0 +1,16 @@
+key,value,unit,as_of,classification,note,source_url
+ngn_10y_yield,0.15951,fraction,2026-10-06,market,Nigeria ten-year indicative yield,https://ng.investing.com/rates-bonds/nigeria-10-year-historical-data
+equity_risk_premium,0.08,fraction,2026-10-08,assumption,Incremental market risk premium; uncalibrated scenario,
+levered_beta,1.0,multiple,2026-10-08,assumption,Placeholder beta; requires peer/market calibration,
+additional_country_premium,0,fraction,2026-10-08,assumption,Zero to avoid double-counting local sovereign risk,
+pre_tax_cost_of_debt,0.18,fraction,2026-10-08,assumption,"Hypothetical financing rate, not company disclosed",
+debt_tax_shield_rate,0.34,fraction,2026-10-08,assumption,Simplified tax assumption close to FY2025 effective rate,https://doclib.ngxgroup.com/Financial_NewsDocs/DANGOTE_CEMENT_PLC_-_2025_AUDITED_FINANCIAL_STATEMENTS.pdf
+share_price_ngn,1066.70,NGN/share,2026-10-07,market,"Last observed close as of 7 October, not an 8 October quote",https://ng.investing.com/equities/dangcem-historical-data
+shares_outstanding_million,16752.154537,million shares,2026-06-30,reported,Excludes 121404714 treasury shares,https://www.marketscreener.com/news/dangote-cement-quarter-2-financial-statement-for-2026-ce7f51d3db80f226
+gross_financial_debt_ngn_m,581044,NGN million,2026-06-30,reported,H1 earnings release debt measure,https://doclib.ngxgroup.com/Financial_NewsDocs/47629_DANGOTE_CEMENT_PLC-H1_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf
+cash_ngn_m,796276,NGN million,2026-06-30,reported,H1 cash and cash equivalents,https://doclib.ngxgroup.com/Financial_NewsDocs/47629_DANGOTE_CEMENT_PLC-H1_2026_EARNINGS_RELEASE_CORPORATE_ACTIONS_JULY_2026.pdf
+noncontrolling_equity_ngn_m,97253,NGN million,2026-06-30,reported,"Book value of noncontrolling interest, proxy",https://www.marketscreener.com/news/dangote-cement-quarter-2-financial-statement-for-2026-ce7f51d3db80f226
+other_nonoperating_adjustments_ngn_m,0,NGN million,2026-10-08,assumption,"Other nonoperating adjustments, placeholder",
+terminal_growth,0.04,fraction,2026-10-08,assumption,"Nominal long-term growth, not management guidance",
+stub_days_remaining_2026,84,days,2026-10-08,computed,Oct 8 through Dec 31 approximated 84 days,
+days_per_year,365,days,2026-10-08,convention,365-day annualization denominator,
