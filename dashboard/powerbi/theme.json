@@ -1,0 +1,17 @@
+{
+  "name": "Dangote Cement Investment Research | Dark",
+  "dataColors": [
+    "#53D0B1",
+    "#3D7EFF",
+    "#FDAF54",
+    "#B68DFA",
+    "#E66B70",
+    "#8DACE8"
+  ],
+  "good": "#53D0B1",
+  "neutral": "#FDAF54",
+  "bad": "#E66B70",
+  "background": "#0B1424",
+  "foreground": "#F2F5FC",
+  "tableAccent": "#53D0B1"
+}
