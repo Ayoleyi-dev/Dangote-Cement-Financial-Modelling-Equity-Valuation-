@@ -1,0 +1,257 @@
+Year,Scenario,MetricKey,ValueNGNm,Basis,Source
+2023,Actual,Revenue,2208090,Reported,FY2025 audited accounts / FY2024 annual report
+2023,Actual,GrossProfit,1201812,Reported,FY2025 audited accounts / FY2024 annual report
+2023,Actual,EBIT,734267,Reported,FY2025 audited accounts / FY2024 annual report
+2023,Actual,PAT,455583,Reported,FY2025 audited accounts / FY2024 annual report
+2023,Actual,PBT,553104,Reported,FY2025 audited accounts / FY2024 annual report
+2024,Actual,Revenue,3580550,Reported,FY2025 audited accounts / FY2024 annual report
+2024,Actual,GrossProfit,1934899,Reported,FY2025 audited accounts / FY2024 annual report
+2024,Actual,EBIT,1152042,Reported,FY2025 audited accounts / FY2024 annual report
+2024,Actual,PAT,503247,Reported,FY2025 audited accounts / FY2024 annual report
+2024,Actual,PBT,732537,Reported,FY2025 audited accounts / FY2024 annual report
+2024,Actual,Cash,449831,Reported,FY2025 audited Group accounts
+2024,Actual,Equity,2175245,Reported,FY2025 audited Group accounts
+2024,Actual,Assets,6403238,Reported,FY2025 audited Group accounts
+2024,Actual,Liabilities,4227993,Reported,FY2025 audited Group accounts
+2024,Actual,Debt,2631564,Computed reported captions,Audited balance sheet: two financial liabilities captions
+2024,Actual,CFO,821184,Reported,Audited cash flow
+2024,Actual,CashCapex,423454,Derived positive spending,Audited cash flow
+2024,Actual,DandA,228959,Reported,Audited cash flow
+2025,Actual,Revenue,4306704,Reported,FY2025 audited accounts / FY2024 annual report
+2025,Actual,GrossProfit,2672274,Reported,FY2025 audited accounts / FY2024 annual report
+2025,Actual,EBIT,1765277,Reported,FY2025 audited accounts / FY2024 annual report
+2025,Actual,PAT,1014921,Reported,FY2025 audited accounts / FY2024 annual report
+2025,Actual,PBT,1532660,Reported,FY2025 audited accounts / FY2024 annual report
+2025,Actual,Cash,397569,Reported,FY2025 audited Group accounts
+2025,Actual,Equity,2620136,Reported,FY2025 audited Group accounts
+2025,Actual,Assets,6040727,Reported,FY2025 audited Group accounts
+2025,Actual,Liabilities,3420591,Reported,FY2025 audited Group accounts
+2025,Actual,Debt,1159575,Computed reported captions,Audited balance sheet: two financial liabilities captions
+2025,Actual,CFO,1710762,Reported,Audited cash flow
+2025,Actual,CashCapex,497726,Derived positive spending,Audited cash flow
+2025,Actual,DandA,215026,Reported,Audited cash flow
+2026,Base,Revenue,5168044.8,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,EBIT,2118898.368,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,PAT,1298981.3879,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,PBT,1968153.618,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,CFO,1703006.7507,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,Cash,576814.0347,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,Equity,3269626.6939,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,Assets,6993178.3291,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,Liabilities,3723551.6352,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,CashCapex,723526.272,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,DandA,258402.24,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,NWC,72352.6272,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Base,ChangeNWC,5121.6272,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,Revenue,5788210.176,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,EBIT,2344225.1213,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,PAT,1447697.045,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,PBT,2193480.3713,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,CFO,1879169.9886,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,Cash,828923.4279,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,Equity,3993475.2165,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,Assets,7933464.5679,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,Liabilities,3939989.3514,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,CashCapex,752467.3229,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,DandA,289410.5088,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,NWC,81034.9425,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Base,ChangeNWC,8682.3153,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,Revenue,6367031.1936,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,EBIT,2546812.4774,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,PAT,1581404.7001,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,PBT,2396067.7274,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,CFO,2042397.5155,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,Cash,1165830.1002,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,Equity,4784177.5665,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,Assets,8926175.4531,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,Liabilities,4141997.8866,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,CashCapex,764043.7432,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,DandA,318351.5597,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,NWC,89138.4367,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Base,ChangeNWC,8103.4942,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,Revenue,6876393.6891,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,EBIT,2716175.5072,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,PAT,1693184.2997,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,PBT,2565430.7572,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,CFO,2180617.6593,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,Cash,1592707.5538,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,Equity,5630769.7164,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,Assets,9950535.1139,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,Liabilities,4319765.3975,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,CashCapex,756403.3058,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,DandA,343819.6845,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,NWC,96269.5116,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Base,ChangeNWC,7131.0749,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,Revenue,7357741.2473,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,EBIT,2869519.0865,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,PAT,1794391.0621,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,PBT,2718774.3365,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,CFO,2306284.0086,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,Cash,2115277.1566,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,Equity,6527965.2474,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,Assets,11015720.9427,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,Liabilities,4487755.6953,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,CashCapex,735774.1247,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,DandA,367887.0624,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,NWC,103008.3775,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Base,ChangeNWC,6738.8658,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,Revenue,4823508.48,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,EBIT,1784698.1376,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,PAT,1040143.2608,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,PBT,1575974.6376,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,CFO,1489744.0661,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,Cash,438763.7419,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,Equity,3192214.7934,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,Assets,6795523.253,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,Liabilities,3603308.4595,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,CashCapex,771761.3568,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,DandA,241175.424,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,NWC,67529.1187,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,ChangeNWC,298.1187,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,Revenue,5209389.1584,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,EBIT,1823286.2054,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,PAT,1065611.3856,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,PBT,1614562.7054,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,CFO,1529402.014,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,Cash,498508.7587,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,Equity,3778301.0555,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,Assets,7516281.8718,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,Liabilities,3737980.8163,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,CashCapex,781408.3738,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,DandA,260469.4579,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,NWC,72931.4482,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Downside,ChangeNWC,5402.3295,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,Revenue,5521952.5079,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,EBIT,1877463.8527,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,PAT,1101368.6328,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,PBT,1668740.3527,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,CFO,1581813.8713,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,Cash,602909.8941,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,Equity,4384053.8035,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,Assets,8231119.2288,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,Liabilities,3847065.4253,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,CashCapex,773073.3511,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,DandA,276097.6254,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,NWC,77307.3351,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Downside,ChangeNWC,4375.8869,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,Revenue,5798050.1333,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,EBIT,1913356.544,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,PAT,1125057.809,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,PBT,1704633.044,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,CFO,1619818.4489,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,Cash,753982.3116,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,Equity,5002835.5985,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,Assets,8946259.095,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,Liabilities,3943423.4965,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,CashCapex,753746.5173,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,DandA,289902.5067,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,NWC,81172.7019,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Downside,ChangeNWC,3865.3668,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,Revenue,6029972.1386,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,EBIT,1929591.0844,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,PAT,1135772.6057,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,PBT,1720867.5844,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,CFO,1642747.8045,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,Cash,953312.287,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,Equity,5627510.5316,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,Assets,9651874.808,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,Liabilities,4024364.2764,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,CashCapex,723596.6566,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,DandA,301498.6069,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,NWC,84419.6099,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Downside,ChangeNWC,3246.9081,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,Revenue,5340312.96,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,EBIT,2296334.5728,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,PAT,1453083.4863,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,PBT,2168781.3228,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,CFO,1840119.0028,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,Cash,635949.1953,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,Equity,3346677.7431,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,Assets,7130350.9662,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,Liabilities,3783673.223,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,CashCapex,747643.8144,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,DandA,267015.648,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,NWC,74764.3814,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Upside,ChangeNWC,7533.3814,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,Revenue,6194763.0336,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,EBIT,2663748.1044,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,PAT,1699250.5525,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,PBT,2536194.8544,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,CFO,2124579.6531,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,Cash,978031.1278,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,Equity,4196303.0194,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,Assets,8278179.3181,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,Liabilities,4081876.2987,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,CashCapex,805319.1944,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,DandA,309738.1517,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,NWC,86726.6825,Illustrative analyst forecast,Scenario CSV forecast.py
+2027,Upside,ChangeNWC,11962.301,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,Revenue,7062029.8583,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,EBIT,3001362.6898,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,PAT,1925452.3247,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,PBT,2873809.4398,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,CFO,2393965.332,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,Cash,1434273.4645,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,Equity,5159029.1817,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,Assets,9543581.6023,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,Liabilities,4384552.4205,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,CashCapex,847443.583,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,DandA,353101.4929,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,NWC,98868.418,Illustrative analyst forecast,Scenario CSV forecast.py
+2028,Upside,ChangeNWC,12141.7355,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,Revenue,7909473.4413,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,EBIT,3361526.2126,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,PAT,2166761.8849,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,PBT,3233972.9626,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,CFO,2677924.5968,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,Cash,2031221.7903,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,Equity,6242410.1242,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,Assets,10922720.3552,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,Liabilities,4680310.231,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,CashCapex,870042.0785,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,DandA,395473.6721,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,NWC,110732.6282,Illustrative analyst forecast,Scenario CSV forecast.py
+2029,Upside,ChangeNWC,11864.2102,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,Revenue,8700420.7854,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,EBIT,3654176.7299,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,PAT,2362837.7315,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,PBT,3526623.4799,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,CFO,2914338.758,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,Cash,2766546.354,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,Debt,1159575,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,Equity,7423828.9899,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,Assets,12380179.844,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,Liabilities,4956350.8541,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,CashCapex,870042.0785,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,DandA,435021.0393,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,NWC,121805.891,Illustrative analyst forecast,Scenario CSV forecast.py
+2030,Upside,ChangeNWC,11073.2628,Illustrative analyst forecast,Scenario CSV forecast.py
+2026,Downside,FCFF,647016.7193,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2027,Downside,FCFF,677027.6502,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2028,Downside,FCFF,737774.5302,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2029,Downside,FCFF,795105.9416,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2030,Downside,FCFF,848185.1579,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2026,Base,FCFF,928227.2637,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2027,Base,FCFF,1075449.4507,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2028,Base,FCFF,1227100.5574,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2029,Base,FCFF,1372961.1386,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2030,Base,FCFF,1519256.669,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2026,Upside,FCFF,1050382.616,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2027,Upside,FCFF,1277167.8862,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2028,Upside,FCFF,1504429.1766,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2029,Upside,FCFF,1765789.9458,Illustrative DCF FCFF,valuation.py; see methodology for limitations
+2030,Upside,FCFF,2002204.107,Illustrative DCF FCFF,valuation.py; see methodology for limitations
