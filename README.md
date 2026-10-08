@@ -52,6 +52,10 @@ python scripts/validate.py
 
 No credentials or paid datasets are needed. The model is constructed from the audited public disclosures. Data in the CSV files are integers in **₦ million**, except earnings per share (₦ per share).
 
+## Financial performance review
+
+I have started the [FY2024–FY2025 performance review](docs/financial_performance.md), including gross/operating/net margins, tax rate, cash conversion, working capital, cash capex and management-defined net debt. I compute these metrics from source CSVs with `python scripts/analyze.py`.
+
 ## My next milestones
 
 1. **Historical statements & checks — COMPLETE for FY2024–FY2025**. FY2023 profit or loss is present; FY2023 balance sheet and cash flow remain to be added.
